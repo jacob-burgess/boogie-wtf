@@ -21,7 +21,29 @@ export const metadata: Metadata = {
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  keywords: siteConfig.keywords,
+  keywords: [
+    "boogie",
+    "JacoBoogie",
+    "blog",
+    "developer",
+    "software engineer",
+    "web developer",
+  ],
+  authors: [
+    {
+      name: "Jacob Burgess",
+      url: "https://twitter.com/jacoboogie",
+    },
+  ],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: siteConfig.name,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    url: process.env.VERCEL_URL ?? "https://boogie.wtf",
+    images: "/opengraph-image.jpeg",
+  },
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
@@ -46,8 +68,8 @@ export default function RootLayout({
           >
             {children}
             <TailwindIndicator />
+            <ThemeToggle />
           </ThemeProvider>
-          <ThemeToggle />
         </TRPCReactProvider>
       </body>
     </html>
