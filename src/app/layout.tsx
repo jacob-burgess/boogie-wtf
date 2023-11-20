@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     url: "https://boogie.wtf",
-    images: "https://boogie.wtf/opengraph-image.jpeg",
+    images: "https://boogie.wtf/og-image.jpeg",
   },
   icons: {
     icon: "/favicon.ico",
