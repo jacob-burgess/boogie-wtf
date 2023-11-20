@@ -16,7 +16,7 @@ const getRandomLoadingText = () => {
 
 const Loading = ({}) => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-4">
+    <main className="mt-40 flex flex-col items-center justify-center gap-4">
       <div className="h-32 w-32">
         <Image
           src="/discoball.gif"
@@ -30,7 +30,7 @@ const Loading = ({}) => {
       <h1 className="text-xl font-bold tracking-wider">
         {getRandomLoadingText()}
       </h1>
-    </div>
+    </main>
   );
 };
 

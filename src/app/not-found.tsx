@@ -1,23 +1,28 @@
+import Image from "next/image";
 import Link from "next/link";
-import { HandMetal } from "lucide-react";
-
 import { Button } from "~/components/ui/button";
 
 const NotFound = ({}) => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-4">
+    <main className="mt-40 flex flex-col items-center justify-center gap-4">
+      <div className="h-32 w-32">
+        <Image
+          src="/discoball.gif"
+          width="32"
+          height="32"
+          alt="Disco"
+          className="inline h-auto w-full animate-bounce"
+          priority
+        />
+      </div>
       <h1 className="text-2xl font-bold tracking-wider">Oops! | 404</h1>
       <h2 className="text-xl font-bold tracking-wider">
-        Looks like this party&apos;s rolled.
+        website is a work in progress...
       </h2>
-      {/* TODO: more clever 404 */}
-      <Button asChild variant="secondary">
-        <Link href="/">
-          <HandMetal className="mr-4 h-6 w-6" />
-          Back to the party
-        </Link>
+      <Button asChild variant={"link"}>
+        <Link href="/">Back to the party</Link>
       </Button>
-    </div>
+    </main>
   );
 };
 
