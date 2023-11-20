@@ -36,14 +36,19 @@ export const metadata: Metadata = {
       url: "https://twitter.com/jacoboogie",
     },
   ],
+  creator: "Jacob Burgess",
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: siteConfig.name,
     title: siteConfig.name,
     description: siteConfig.description,
-    url: "https://boogie.wtf",
-    images: "https://boogie.wtf/disco-og.jpg",
+    images: {
+      url: siteConfig.ogImage,
+      width: 1200,
+      height: 630,
+      alt: siteConfig.name,
+    },
   },
   icons: {
     icon: "/favicon.ico",
