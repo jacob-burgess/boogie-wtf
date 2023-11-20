@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: siteConfig.name,
     description: siteConfig.description,
-    url: process.env.VERCEL_URL ?? "https://boogie.wtf",
+    url: "https://boogie.wtf",
     images: "/opengraph-image.jpeg",
   },
   icons: {
