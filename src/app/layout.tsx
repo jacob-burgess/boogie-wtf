@@ -10,6 +10,9 @@ import { TailwindIndicator } from "~/components/tailwind-indicator";
 import { type Metadata } from "next";
 import { siteConfig } from "~/config/site";
 import { Analytics } from "@vercel/analytics/react";
+import { SiteFooter } from "~/components/site-footer";
+import { cn } from "~/lib/utils";
+import { SiteHeader } from "~/components/site-header";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -75,7 +78,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable}`}>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          `font-sans ${inter.variable}`,
+        )}
+      >
         <TRPCReactProvider cookies={cookies().toString()}>
           <ThemeProvider
             attribute="class"
@@ -83,7 +91,11 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <div className="relative flex min-h-screen flex-col">
+              <SiteHeader />
+              <div className="flex-1">{children}</div>
+              <SiteFooter />
+            </div>
             <TailwindIndicator />
             <ThemeToggle />
           </ThemeProvider>
