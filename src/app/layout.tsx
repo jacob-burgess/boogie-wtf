@@ -6,6 +6,7 @@ import { cookies } from "next/headers";
 import { TRPCReactProvider } from "~/trpc/react";
 import { ThemeProvider } from "~/components/theme-provider";
 import { ThemeToggle } from "~/components/theme-toggle";
+import { TailwindIndicator } from "~/components/tailwind-indicator";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,9 +34,10 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <ThemeToggle />
             {children}
+            <TailwindIndicator />
           </ThemeProvider>
+          <ThemeToggle />
         </TRPCReactProvider>
       </body>
     </html>

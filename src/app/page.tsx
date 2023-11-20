@@ -1,9 +1,9 @@
 export default function Home() {
   return (
     <main className="">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
+      <div className="container flex flex-col items-center justify-center">
         <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
-          boogie.<span className="text-blue-50">wtf</span>
+          boogie.<span className="">wtf</span>
         </h1>
       </div>
     </main>
