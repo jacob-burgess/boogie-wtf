@@ -5,7 +5,6 @@ import { cookies } from "next/headers";
 
 import { TRPCReactProvider } from "~/trpc/react";
 import { ThemeProvider } from "~/components/theme-provider";
-import { ThemeToggle } from "~/components/theme-toggle";
 import { TailwindIndicator } from "~/components/tailwind-indicator";
 import { type Metadata } from "next";
 import { siteConfig } from "~/config/site";
@@ -97,7 +96,6 @@ export default function RootLayout({
               <SiteFooter />
             </div>
             <TailwindIndicator />
-            <ThemeToggle />
           </ThemeProvider>
         </TRPCReactProvider>
         <Analytics />
