@@ -9,6 +9,7 @@ import { ThemeToggle } from "~/components/theme-toggle";
 import { TailwindIndicator } from "~/components/tailwind-indicator";
 import { type Metadata } from "next";
 import { siteConfig } from "~/config/site";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -71,6 +72,7 @@ export default function RootLayout({
             <ThemeToggle />
           </ThemeProvider>
         </TRPCReactProvider>
+        <Analytics />
       </body>
     </html>
   );
