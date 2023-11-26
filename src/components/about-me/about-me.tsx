@@ -1,6 +1,3 @@
-import React from "react";
-import barBugs from "../../../public/images/bar-bugs.jpg";
-import ImageCard from "~/components/about-me/image-card";
 import AboutMeIntro from "~/components/about-me/about-me-intro";
 import AboutMeImages from "./about-me-images";
 

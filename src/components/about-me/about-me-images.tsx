@@ -1,5 +1,7 @@
 import React from "react";
-import ImageCard, { ImageCardProps } from "~/components/about-me/image-card";
+import ImageCard, {
+  type ImageCardProps,
+} from "~/components/about-me/image-card";
 import barBugs from "../../../public/images/bar-bugs.jpg";
 import chargersCheifs from "../../../public/images/chargers-cheifs.jpg";
 import chargersTailgate from "../../../public/images/chargers-tailgate.jpg";
