@@ -52,8 +52,8 @@ const AboutMe = () => {
           </Link>
         </Button>
       </div>
-      <p className="mb-4 text-lg">
-        you can find me on{" "}
+      <div className="mb-4">
+        <p className="text-lg">you can find me on</p>
         <ul className="mt-2 list-inside list-disc">
           <li>
             <a className="hover:underline" href={siteConfig.links.github}>
@@ -74,7 +74,7 @@ const AboutMe = () => {
             </a>
           </li>
         </ul>
-      </p>
+      </div>
     </div>
   );
 };

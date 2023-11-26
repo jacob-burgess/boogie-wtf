@@ -12,6 +12,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SiteFooter } from "~/components/site-footer";
 import { cn } from "~/lib/utils";
 import { SiteHeader } from "~/components/site-header";
+import { env } from "~/env.mjs";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,6 +20,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(env.NEXT_PUBLIC_BOOGIE_URL),
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
