@@ -9,7 +9,7 @@ export const navConfig = [
   },
   {
     title: "Projects",
-    href: "/contact",
+    href: "/projects",
   },
   {
     title: "Now",

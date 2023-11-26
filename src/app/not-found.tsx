@@ -20,6 +20,7 @@ const NotFound = ({}) => {
         website is a work in progress...
       </h2>
       <Button asChild variant={"link"}>
+        {/* TODO: Link doesnt take back home, maybe has to be client components or something */}
         <Link href="/">Back to the party</Link>
       </Button>
     </main>
