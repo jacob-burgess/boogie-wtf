@@ -68,11 +68,9 @@ const AboutMeImages = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-4">
       {imageGroups.map((group, i) => (
-        <div className="border-2 border-foreground p-2">
-          <h1 key={i} className="py-4 text-center text-xl font-bold">
-            {group.title}
-          </h1>
-          <div key={i} className="flex flex-row justify-center gap-4">
+        <div key={i} className="border-2 border-foreground p-2">
+          <h1 className="py-4 text-center text-xl font-bold">{group.title}</h1>
+          <div className="flex flex-row justify-center gap-4">
             {group.imageCards.map((imageCard, j) => (
               <ImageCard key={`${i}-${j}`} {...imageCard} />
             ))}
