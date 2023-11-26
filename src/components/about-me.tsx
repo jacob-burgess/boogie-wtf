@@ -33,10 +33,9 @@ const AboutMe = () => {
       </p>
       <p className="mb-4 text-lg">
         I love building things and exploring new ways to make my development
-        life easier through the tools I use (recently hooked on SST as my
-        love/hate relationship with terraform evolves). I grew up in San Diego,
-        CA and graduated from USC in 2020. Since then, I&apos;ve been living by
-        the beach in Venice, CA and try to{" "}
+        life easier through the tools I use. I grew up in San Diego, CA and
+        graduated from USC in 2020. Since then, I&apos;ve been living by the
+        beach in Venice, CA and try to{" "}
         <a
           className="text-teal-600 hover:underline"
           href="https://twitter.com/JacoBoogie/status/1727095350564176335"
