@@ -1,18 +1,18 @@
 export const navConfig = [
   {
-    title: "About",
-    href: "/about",
+    title: "Life",
+    href: "/life",
   },
-  {
-    title: "Blog",
-    href: "/blog",
-  },
-  {
-    title: "Projects",
-    href: "/projects",
-  },
-  {
-    title: "Now",
-    href: "/now",
-  },
+  // {
+  //   title: "Blog",
+  //   href: "/blog",
+  // },
+  // {
+  //   title: "Projects",
+  //   href: "/projects",
+  // },
+  // {
+  //   title: "Now",
+  //   href: "/now",
+  // },
 ];

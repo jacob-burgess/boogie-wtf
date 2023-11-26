@@ -35,7 +35,7 @@ const AboutMe = () => {
         I love building things and exploring new ways to make my development
         life easier through the tools I use (recently hooked on SST as my
         love/hate relationship with terraform evolves). I grew up in San Diego,
-        CA and gracuated from USC in 2020. Since then, I&apos;ve been living bby
+        CA and graduated from USC in 2020. Since then, I&apos;ve been living by
         the beach in Venice, CA and try to{" "}
         <a
           className="text-teal-600 hover:underline"
@@ -47,8 +47,8 @@ const AboutMe = () => {
       </p>
       <div className="mb-4 items-center justify-center text-center">
         <Button size="lg" asChild>
-          <Link href="/about">
-            Check the about page, its got pics n stuff too
+          <Link href="/life">
+            Check the life page, its got pics n stuff too
           </Link>
         </Button>
       </div>
