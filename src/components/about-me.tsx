@@ -9,7 +9,7 @@ const AboutMe = () => {
         About me
       </h1>
       <h1 className="mb-4 text-4xl font-bold">
-        Hello, my name is <span className="text-teal-700">Jacob Burgess.</span>
+        Hello, my name is <span className="text-teal-700">Jacob Burgess</span>.
       </h1>
       <p className="mb-4 text-lg">
         some of my friends call me{" "}
@@ -66,10 +66,7 @@ const AboutMe = () => {
             </a>
           </li>
           <li>
-            <a
-              className="hover:underline"
-              href="mailto:jacobburgess11@gmail.com"
-            >
+            <a className="hover:underline" href="mailto:jacob@boogie.wtf">
               email
             </a>
           </li>
