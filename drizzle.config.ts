@@ -8,5 +8,5 @@ export default {
   dbCredentials: {
     connectionString: env.DATABASE_URL,
   },
-  tablesFilter: ["boogie-wtf_*"],
+  tablesFilter: ["wtf_*"],
 } satisfies Config;
