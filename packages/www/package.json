@@ -18,6 +18,7 @@
     "typescript": "^5.7.3"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.1.2",
     "@tailwindcss/postcss": "^4.0.7",
     "@tanstack/react-router": "^1.106.0",
     "@tanstack/start": "^1.107.0",
